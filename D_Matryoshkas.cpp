@@ -1,0 +1,44 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <math.h>
+#include <string>
+#include <map> 
+#include <set>
+#include <queue>
+#include <unordered_map>
+#include <unordered_set>
+#include <iomanip>
+#include<numeric>
+
+using namespace std;
+#define int long long 
+const int mod = 1e9 + 7;
+
+void solve() {
+    int n;
+    cin>>n;
+    vector<int> a(n);
+    map<int,int> mp;
+    vector<pair<int,int> > v;
+    for(int i=0;i<n;i++){
+        cin>>a[i];
+        mp[a[i]]++;
+    }
+    int ans =0;
+    for(auto &[ele,fre]: mp){
+        int prev = mp.count(ele-1) ? mp[ele-1] : 0;
+        ans += max(0LL, fre - prev);
+    }
+    cout<<ans<<endl;
+}
+
+
+signed main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+    while (t--) solve();
+}

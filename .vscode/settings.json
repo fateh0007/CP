@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.ejs": "html",
+        "iostream": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "queue": "cpp",
+        "ostream": "cpp",
+        "ios": "cpp",
+        "string_view": "cpp",
+        "deque": "cpp",
+        "stack": "cpp",
+        "map": "cpp",
+        "unordered_set": "cpp",
+        "iomanip": "cpp"
+    }
+}
