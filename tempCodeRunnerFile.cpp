@@ -1,11 +1,11 @@
- = true;
-    for(int i=1;i<n;i++){
-        if(a[i]<a[i-1]){
-            flag = false;
-            break;
-        }
-    }
-    if(flag==false){
-        cout<<-1<<endl;
-        return;
-    }
+==1){
+    //     for(auto it = mp.rbegin(); it != mp.rend(); ++it){
+    //         int num = it->first;
+    //         vector<int> &v = it->second;
+    //         for(int i=0;i<v.size();i++){
+    //             cout<<v[i]<<" ";
+    //         }
+    //     }  
+    //     cout<<endl;
+    //     return;
+    // }
