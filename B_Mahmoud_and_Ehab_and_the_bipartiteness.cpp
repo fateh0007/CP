@@ -15,10 +15,9 @@ using namespace std;
 const int mod = 1e9 + 7;
 
 void solve() {
-    int n,a,b;
-    cin>>n>>a>>b;
-    if(a+b+2<=n || (a==b && a==n)) cout<<"Yes"<<endl;
-    else cout<<"No"<<endl;
+    int n;
+    cin>>n;
+    
 }
 
 signed main() {
