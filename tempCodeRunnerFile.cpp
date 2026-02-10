@@ -1,7 +1,5 @@
-ring s = "";
-    // for(int i=31;i>=0;i--){
-    //     if(k>=bits[i]){
-    //         s+='1';
-    //         k-=bits[i];
-    //     }
+pq.empty()){
+    //     int x = pq.top();
+    //     pq.pop();
+    //     s+=to_string(x);
     // }

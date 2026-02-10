@@ -30,8 +30,6 @@ void solve() {
                         s[i+1] = ch;
                         break;
                     }
-                    // s[i+1] = ch;
-                    // break;
                 }
             }
         }
