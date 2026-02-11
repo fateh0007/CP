@@ -64,29 +64,6 @@ void solve() {
         }
         // cout<<v[i]<<" ";
     }
-    // cout<<endl;
-    // int cnt = pq.size();
-    // bool rev = true;
-    // while(cnt>0){
-    //     if(rev==true){
-    //         int x = pq.top();
-    //         pq.pop();
-    //         int reverseNum = numberReverse(x);
-    //         pq.push(reverseNum);
-    //     }else{
-    //         int x = pq.top();
-    //         pq.pop();
-    //         s+=to_string(x);
-    //         cnt--;
-    //     }
-    //     rev = !rev;
-    // }
-    // while(!pq.empty()){
-    //     int x = pq.top();
-    //     pq.pop();
-    //     s+=to_string(x);
-    // }
-    // cout<<s<<endl;
     if(s.size()>=m+1){
         cout<<"Sasha"<<endl;
     }else{
