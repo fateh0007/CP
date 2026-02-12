@@ -51,6 +51,9 @@ void solve() {
                 --it;
                 mini = min(mini,abs(*it-a[i]));
             }
+            // for(int j=0;j<differences.size();j++){
+            //     mini = min(mini,abs(differences[j]-a[i]));
+            // }
         }
     }
     cout<<mini<<endl;
