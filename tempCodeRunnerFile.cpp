@@ -1,5 +1,4 @@
-pq.empty()){
-    //     int x = pq.top();
-    //     pq.pop();
-    //     s+=to_string(x);
+tOpen!=cntClose){
+    //     cout<<-1<<endl;
+    //     return;
     // }
