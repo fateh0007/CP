@@ -20,7 +20,6 @@ bool possible(int n,int k,vector<int> &segmentStart,vector<int> &segmentEnd){
     for(int i=0;i<n;i++){
         currMaxPos += k;
         currMinPos -= k;
-
         int reachableStart= max(currMinPos,segmentStart[i]);
         int reachableEnd = min(currMaxPos,segmentEnd[i]);
         if(reachableStart>reachableEnd){
