@@ -29,25 +29,17 @@ void solve(){
     mp[4] = 3;
     mp[5] = 2;
     mp[6] = 1;
-    vector<vector<int> > dp(n,vector<int>(7,INF));
-    for(int i=6;i>=1;i--){
-        dp[0][i] = (a[0]==i?0:1);
-    }
-    for(int i=1;i<n;i++){
-        for(int j=1;j<=6;j++){
-            int c = (a[i]==j?0:1);
-            for(int k=1;k<=6;k++){
-                if(j!=k && mp[j]!=k){
-                    dp[i][j] = min(dp[i][j],dp[i-1][k]+c);
-                }
-            }
+    int cnt =0;
+    int i=1;
+    while(i<n){
+        if(a[i]==a[i-1] || a[i]==mp[a[i-1]]){
+            cnt++;
+            i+=2;
+        }else{
+            i++;
         }
     }
-    int ans = 1e18;
-    for(int i=1;i<=6;i++){
-        ans = min(ans,dp[n-1][i]);
-    }
-    cout<<ans<<endl;
+    cout<<cnt<<endl;
 
 }
 
