@@ -38,11 +38,11 @@ void solve(){
             }
         }
     }
-    int ans =0;
+    int res =0;
     for(int i=1;i<=n;i++){
-        ans = (ans+dp[k][i]) % mod;
+        res = (res+dp[k][i]) % mod;
     }
-    cout<<ans<<endl;
+    cout<<res<<endl;
 }
 
 signed main(){
